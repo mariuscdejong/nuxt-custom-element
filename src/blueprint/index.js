@@ -9,8 +9,6 @@ import kebabCase from 'lodash.kebabcase'
 const logger = consola.withScope('CustomElement')
 
 export default class CustomElementBlueprint extends Blueprint {
-  static id = 'customElement'
-
   constructor (nuxt, options) {
     if (nuxt.options.mode !== 'spa') {
       throw new Error('Nuxt Custom Element module only works with SPA mode')
